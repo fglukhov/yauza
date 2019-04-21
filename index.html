@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Яуза</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput-rtl.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <div class="up-link"></div>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header>
+        <div class="container">
+          <div class="header-content">
+            <div class="row">
+              <div class="header-col-l">
+                <div class="header-logo"><img src="images/logo.png" alt="Яуза"><img class="img-fixed" src="images/logo-fixed.png" alt="Яуза"></div>
+              </div>
+              <div class="header-col-m">
+                <div class="navbar-trigger"><span></span><span></span><span></span></div>
+                <div class="navbar-wrapper">
+                  <div class="close"></div>
+                  <ul class="nav navbar-nav">
+                    <li><a href="#services"><span>Услуги</span></a></li>
+                    <li><a href="#map"><span>Карта недвижимости</span></a></li>
+                    <li><a href="#about"><span>О компании</span></a></li>
+                    <li><a href="#team"><span>Команда</span></a></li>
+                    <li><a href="#reviews"><span>Отзывы</span></a></li>
+                    <li><a href="#contacts"><span>Контакты</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-col-r">
+                <div class="header-button"><a class="btn-callback" href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                <div class="header-phone"><a href="tel:+7 (498) 601-67-26">+7 (498) 601-67-26</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div class="page-wrapper">
+          <!-- Верхний блок-->
+          <div class="section section-top">
+            <div class="section-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-7">
+                    <div class="section-top-descr">
+                      <div class="h1">Эксперты &#8470;&nbsp;1 по&nbsp;недвижимости в&nbsp;Мытищах</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-5">
+                    <div class="section-top-form">
+                      <div class="h3">Получить консультацию</div>
+                      <form id="topForm">
+                        <div class="form-group">
+                          <label class="placeholder" for="top_name">Ваше имя</label>
+                          <input type="text" name="top_name" id="top_name" required>
+                        </div>
+                        <div class="form-group">
+                          <label class="placeholder" for="top_phone">+7 (XXX) XXX-XX-XX</label>
+                          <input class="input-phone" type="text" name="top_phone" id="top_phone" required>
+                        </div>
+                        <div class="form-footer">
+                          <button class="btn btn-1 btn-1-order" type="submit">Отправить заявку</button>
+                        </div>
+                        <div class="form-agree">
+                          <p>Нажимая кнопку &laquo;Отправить&raquo; вы&nbsp;соглашаетесь с&nbsp;<a href="#">Политикой конфиденциальности</a></p>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="realty-list">
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="realty-tmb">
+                        <div class="realty-tmb-pic"><img src="images/realty-1.png"></div>
+                        <div class="realty-tmb-descr">
+                          <div class="realty-tmb-cat">
+                            <p>Продажа / аренда</p>
+                          </div>
+                          <div class="h3">Квартиры</div>
+                          <ul>
+                            <li>Новостройки</li>
+                            <li>Вторичное жилье</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="realty-tmb">
+                        <div class="realty-tmb-pic"><img src="images/realty-2.png"></div>
+                        <div class="realty-tmb-descr">
+                          <div class="realty-tmb-cat">
+                            <p>Продажа / аренда</p>
+                          </div>
+                          <div class="h3">Дома</div>
+                          <ul>
+                            <li>Новостройки</li>
+                            <li>Вторичное жилье</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="realty-tmb">
+                        <div class="realty-tmb-pic"><img src="images/realty-3.png"></div>
+                        <div class="realty-tmb-descr">
+                          <div class="realty-tmb-cat">
+                            <p>Продажа / аренда</p>
+                          </div>
+                          <div class="h3">Коммерческая недвижимость</div>
+                          <ul>
+                            <li>Склады</li>
+                            <li>Офисы</li>
+                            <li>Нежилые помещения</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Верхний блок END-->
+          <!-- Услуги-->
+          <div class="section section-services">
+            <div class="section-content">
+              <div class="container">
+                <div class="section-header"><a name="services"></a>
+                  <div class="h2">Пакеты услуг</div>
+                </div>
+                <div class="services-list">
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="service-tmb">
+                        <div class="service-tmb-top">
+                          <div class="h3">Эконом</div>
+                          <ul>
+                            <li>Подбор недвижимости</li>
+                            <li>Подача заявки на&nbsp;ипотеку в&nbsp;офисе</li>
+                            <li>Подготовка документов необходимых для сделки</li>
+                          </ul>
+                        </div>
+                        <div class="service-tmb-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#serviceModal">Заказать пакет услуг</a></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="service-tmb">
+                        <div class="service-tmb-top">
+                          <div class="h3">Стандарт</div>
+                          <ul>
+                            <li>Подача заявки на&nbsp;ипотеку в&nbsp;офисе</li>
+                            <li>Подбор недвижимости</li>
+                            <li>Проверим продавца квартиры</li>
+                            <li>Проверим квартиру</li>
+                            <li>Подготовка документов необходимых для сделки</li>
+                          </ul>
+                        </div>
+                        <div class="service-tmb-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#serviceModal">Заказать пакет услуг</a></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="service-tmb">
+                        <div class="service-tmb-top">
+                          <div class="h3">Полный пакет</div>
+                          <ul>
+                            <li>Подбор недвижимости</li>
+                            <li>Подача заявки на&nbsp;ипотеку в&nbsp;офисе</li>
+                            <li>Проверим продавца квартиры</li>
+                            <li>Проверим квартиру</li>
+                            <li>Сопровождение сделки на&nbsp;каждом этапе</li>
+                            <li>Подготовка всех необходимых документов для сделки</li>
+                            <li>Представление интересов в&nbsp;гос органах и&nbsp;иных учреждений</li>
+                          </ul>
+                        </div>
+                        <div class="service-tmb-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#serviceModal">Заказать пакет услуг</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Услуги END-->
+          <!-- Преимущества-->
+          <div class="section section-pros">
+            <div class="section-content">
+              <div class="container">
+                <div class="realty-wrapper">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 order-lg-1">
+                      <div class="pros">
+                        <div class="h2">Работа с&nbsp;риелтором</div>
+                        <ul>
+                          <li>Гарантии и&nbsp;Безопасность сделки</li>
+                          <li>Организация и&nbsp;правильное построение всех этапов сделки</li>
+                          <li>Правильное составление договоров</li>
+                          <li>Сопровождения всех этапов</li>
+                          <li>Дополнительные скидки от&nbsp;банков партнеров по&nbsp;Ипотеки</li>
+                          <li>Предоставления и&nbsp;сбор всех необходимых документов</li>
+                          <li>Мы&nbsp;все сделаем за&nbsp;вас</li>
+                          <li>База и&nbsp;большой опыт в&nbsp;продаже недвижимости</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 order-lg-3">
+                      <div class="cons">
+                        <div class="h2">Работа без&nbsp;риелтора</div>
+                        <ul>
+                          <li>Возможность быть обманутым недобросовестными продавцами</li>
+                          <li>Потерять деньги и&nbsp;остаться без Квартиры</li>
+                          <li>Приостановки в&nbsp;гос регистрирующих органах</li>
+                          <li>Неправильное составление договора</li>
+                          <li>Неправильное составление объявления при продаже квартиры и&nbsp;иной недвижимости</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 order-lg-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Преимущества END-->
+          <!-- О&nbsp;компании-->
+          <div class="section section-about">
+            <div class="section-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-5">
+                    <div class="about-pic">
+                      <div class="about-pic-pic"><img src="images/about-pic.jpg"></div>
+                      <div class="about-pic-descr">
+                        <div class="ttl">Агентство работает с</div>
+                        <div class="val">1989</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-7">
+                    <div class="about-descr"><a name="about"></a>
+                      <div class="h2">Агентство<br>недвижимости «Яуза»</div>
+                      <p>Многолетний опыт работы нашего Агентства недвижимости позволяет занимать одну из&nbsp;лидирующих позиций по&nbsp;реализации нового жилья в&nbsp;городе Мытищи.</p>
+                      <p>Наши клиенты&nbsp;&mdash; участники долевого строительства, имеют следующие преимущества: предлагаемые к&nbsp;продаже квартиры находятся в&nbsp;домах современной серии, цена&nbsp;&mdash; доступна.</p>
+                      <p>Основной вид деятельности Агентства недвижимости&nbsp;&mdash; это реализация квартир в&nbsp;строящихся домах-новостройках города Мытищи. Агентство недвижимости &laquo;ЯУЗА&raquo; является единственным уполномоченным Застройщиком&nbsp;&mdash; ООО &laquo;Стройинвест-М&raquo;, ООО &laquo;СК-Каскад&raquo; и&nbsp;ООО &laquo;Развитие-ХХ&raquo; агентом по&nbsp;реализации квартир в&nbsp;возводимых Застройщиком домах-новостройках.</p>
+                      <p>Помимо организации работы по&nbsp;продажам квартир в&nbsp;новостройках, наше агентство оказывает различные риэлторские услуги: арендовать, купить, продать или обменять недвижимость на&nbsp;выгодных условиях&nbsp;&mdash; специалисты агентства &laquo;Яуза&raquo; успешно справятся с&nbsp;любой поставленной перед ними задачей.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- О&nbsp;компании END-->
+          <!-- Что вы получаете-->
+          <div class="section section-what">
+            <div class="section-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                    <div class="section-header">
+                      <div class="h2">Что вы получите при&nbsp;работе с&nbsp;нами?</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8">
+                    <div class="what-list">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="what-tmb">
+                            <div class="what-tmb-pic"><img src="images/what-1.png"></div>
+                            <div class="what-tmb-descr">
+                              <p>Мы&nbsp;будем преставлять ваши интересы на&nbsp;переговорах по&nbsp;покупке, обмене или продаже квартиры</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                          <div class="what-tmb">
+                            <div class="what-tmb-pic"><img src="images/what-2.png"></div>
+                            <div class="what-tmb-descr">
+                              <p>Подать заявку на&nbsp;Ипотеку можно будет сразу у&nbsp;нас в&nbsp;офисе и&nbsp;получить скидку от&nbsp;банка</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                          <div class="what-tmb">
+                            <div class="what-tmb-pic"><img src="images/what-3.png"></div>
+                            <div class="what-tmb-descr">
+                              <p>Собирем и&nbsp;составим документы, необходимые для проведения сделки купли-продажи</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                          <div class="what-tmb">
+                            <div class="what-tmb-pic"><img src="images/what-4.png"></div>
+                            <div class="what-tmb-descr">
+                              <p>Проверим продавца квартиры и&nbsp;сами квартиры для полной законности проводимой сделки</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                          <div class="what-tmb">
+                            <div class="what-tmb-pic"><img src="images/what-5.png"></div>
+                            <div class="what-tmb-descr">
+                              <p>Организуем прием и&nbsp;передачу квартиры. Подготавим акт приема-передачи объекта</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                          <div class="what-tmb">
+                            <div class="what-tmb-pic"><img src="images/what-6.png"></div>
+                            <div class="what-tmb-descr">
+                              <p>Подадим за&nbsp;Вас документы на&nbsp;государственную регистрацию, согласовываем и&nbsp;получаем документы о&nbsp;регистрации</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    <div class="what-pic"><img src="images/what-pic.jpg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Что вы получаете END-->
+          <!-- Карта-->
+          <div class="section section-map">
+            <div class="section-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6 col-lg-5 col-xl-4">
+                    <div class="section-header"><a name="map"></a>
+                      <div class="h2">Никто не&nbsp;знает Мытищи лучше нас</div>
+                      <div class="section-header-descr">
+                        <p>Выберите район, чтобы узнать о нем больше</p>
+                      </div>
+                    </div>
+                    <div class="realty-popup-wrapper">
+                      <div class="realty-popup-wrapper-inner">
+                        <div class="close visible-xs"></div>
+                        <div class="realty-popup-content" data-id="1">
+                          <div class="realty-popup-inner">
+                            <div class="h3"></div>
+                            <div class="realty-popup-descr">
+                              <p></p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="1">
+                          <div class="realty-popup-inner">
+                            <div class="h3">15-й микрорайон</div>
+                            <div class="realty-popup-descr">
+                              <p>Панельная застройка "ПИК", большая плотность домов, отсутствие парковки и узкие проезды, СОШ № 31 с бассеином и футбольным полем, а так же Детская поликлиника (терапия)</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="2">
+                          <div class="realty-popup-inner">
+                            <div class="h3">14-й микрорайон</div>
+                            <div class="realty-popup-descr">
+                              <p>Кирпичные новостройки с хорошими планировками, наличия магазинов питания в шаговой доступности, а так же СОШ 27, которая является одной из сильнейшей школы города</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="3">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Благовещенская</div>
+                            <div class="realty-popup-descr">
+                              <p>Закрытый охраняемый комплекс малоэтажных домов, с охраняемым крытый паркингом</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="4">
+                          <div class="realty-popup-inner">
+                            <div class="h3">6-й микрорайон</div>
+                            <div class="realty-popup-descr">
+                              <p>Спальный район, тупиковая улица имеющая множество магазинов первой необходимости, в шаговой доступности детская и взрослая поликлиника, а так же тут расположен Форд Роз, уникальный проект домов со своим двором, частной охраной и квартирами в 3 этажа, стоимость этих квартир может достигать 30 000 000 руб</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="5">
+                          <div class="realty-popup-inner">
+                            <div class="h3">6-10 микрорайон</div>
+                            <div class="realty-popup-descr">
+                              <p>Старый район, достаточно зеленый и имеет всю инфраструктуру, тут сосредоточено несколько школ и гимназий, так же имеется ледовый дворец Арена Мытищи, Частная школа, одна из лучших в Москве и МО, Классика М, Олимпийский бассеин Дельфин, а так же отличную парковю зону бульвар Ветеранов</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="6">
+                          <div class="realty-popup-inner">
+                            <div class="h3">13-й микрорайон</div>
+                            <div class="realty-popup-descr">
+                              <p>Высотные многоэтажные кирпичные дома с собственным парком (сквер им. Стрелкова), СОШ 10, хорошие просторные квартиры</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="7">
+                          <div class="realty-popup-inner">
+                            <div class="h3"></div>
+                            <div class="realty-popup-descr">
+                              <p>Достаточно хороший и тихий район вдоль речки Яуза, свежий домовлй фонд от застройщика Стройтекс с хорошими планировка, СОШ 10 имеет хороший уровень в городе, так же МГОУ. Отличная парковая зона вдоль речки с местами отдыха</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="8">
+                          <div class="realty-popup-inner">
+                            <div class="h3"></div>
+                            <div class="realty-popup-descr">
+                              <p>Старый фонд 9 этажных домов, а так же высотных панельных домов от компании ПИК, отсутствие как таковой инфраструктуры, приближенность и шум от МКАД</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="9">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Перловка</div>
+                            <div class="realty-popup-descr">
+                              <p>Вблизи станции Перловка, Кооперативный институт, поликлиника, 9 этажные панельные дома, ТЦ Перловский</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="10">
+                          <div class="realty-popup-inner">
+                            <div class="h3">2, 3, 4, 11,12 микрорайон</div>
+                            <div class="realty-popup-descr">
+                              <p>Данная область нас объединяет старым фондом домов начиная с хрущевок, заканчивая многоэтажными панельками 90 х годов, данный район расположен вдоль реки Яуза и имеет замечательную аллеи для пеших прогулок в современном исполнении имея велосипедные дорожки и многое другое, а так же приближенность к городскому парку города и ДК</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="11">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Цветочный город</div>
+                            <div class="realty-popup-descr">
+                              <p>Достаточно не плохой район вблизи ст. Тайнинская, отличные квартиры с улучшенной планировкой, отличная набережная вдоль реки Яуза, с парковой зоной</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="12">
+                          <div class="realty-popup-inner">
+                            <div class="h3">16 мкр</div>
+                            <div class="realty-popup-descr">
+                              <p>Новый строящийся район, застройка ПИК, СОШ 32, Панельный многоэтажные дома, так же есть монолит-кирпичные дома высотки, рядом ТЦ Июнь, (окей, кинотеатр, магазины бутики)</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="13">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Ядреево</div>
+                            <div class="realty-popup-descr">
+                              <p>Весь район располагается вдоль улицы Колпакова, находиться на выезде из города, имеет хорошую инфраструктуру ТЦ 4Dally, ТЦ Июнь, пруд вокруг которого обустроен парк, во всех дворах новые детские площадки, СОШ 28 с бассеином, новый детский садик, и детский мини клуб для детей дошкольного возраста</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="14">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Новое медведково</div>
+                            <div class="realty-popup-descr">
+                              <p>Новый район, который быстро развивается вместе с инфраструктурой, застройщик Инград, СОШ с уклоном английского языка, детский сад, хороший выезд из города. Из минусов - МПЗ (Московский пивоваренный завод) иногда присутствует в районе не приятный запах от выбросов завода.</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="15">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Рупасовские пруды</div>
+                            <div class="realty-popup-descr">
+                              <p>Новый район города, в целом хорошее место, пруд с рыбалкой, лесной массив, не плохие планировки квартир, но отсутствует инфраструктура, так же рядом асфальто-бетонный завод, МПК (московская пивоваренная компания</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="16">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Военный городок</div>
+                            <div class="realty-popup-descr">
+                              <p>Большая часть домов построенная Мин обороны РФ для военных при Сердюкове, долгое время не могли сдать из за отсутствие подключении коммуникаций. На сегодняшний день все полностью функционирует и живут люди, квартиры со стандартной планировкой эконом класса</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="17">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Рождественская</div>
+                            <div class="realty-popup-descr">
+                              <p>наверное один из лучших районов города, новостройки с хорошими планировками, имеет свой частный медицинский центр, несколько торговых центров, гимназия № 16 - одна из лучших в городе</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="18">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Индустриалый район</div>
+                            <div class="realty-popup-descr">
+                              <p>Район вблизи пром зоны гимназия 1, много детских садов, есть как и старый фонд так новый фонд (Жк Рупасовский 1 и 2 очередь)</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="19">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Шараповка</div>
+                            <div class="realty-popup-descr">
+                              <p>Старый район города, полностью имеющий инфраструктуру, шаговая доступность к ст. Мытищи, к городскому парку, ТЦ Красный Кит (торговые площади, мебельный магазин, кинотеатр, фасфуд)</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="20">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Леонидовка</div>
+                            <div class="realty-popup-descr">
+                              <p>Старый фонд, ЦРБ, лицей №2, редко когда в этом районе появляются квартиры в продаже</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="21">
+                          <div class="realty-popup-inner">
+                            <div class="h3">ЖК Отрадный</div>
+                            <div class="realty-popup-descr">
+                              <p>Строящийся район застройщиков Инвестрой</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="22">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Микрорайон Химгородок</div>
+                            <div class="realty-popup-descr">
+                              <p>Находится вдоль Ярославского ш. старый фонд, хотя вблизи Ярославкого ш. есть новостройки, но их место не самое лучшее в городе. СОШ 2, ТЦ Альта</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="23">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Лестех</div>
+                            <div class="realty-popup-descr">
+                              <p>Район полностью построен застройщиком Инвестрой, хорошие планировки, зеленая зона, Лицей 15 далекая удаленность от основного города, и не до конца развита инфраструктура</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="24">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Стрелковая</div>
+                            <div class="realty-popup-descr">
+                              <p>Новый район, который постепенно обрастает инфраструктурой и новыми жителями города. Дома в основной массе монолит кирпич</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-content" data-id="25">
+                          <div class="realty-popup-inner">
+                            <div class="h3">Строители</div>
+                            <div class="realty-popup-descr">
+                              <p>Удаленный район города, старый фонд, рядом спортивный футбольный стадион</p>
+                            </div>
+                            <div class="realty-popup-info">
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Транспорт</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Недвижимость</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Инфраструктура</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="popup-info-tmb">
+                                    <div class="ttl">Парковые зоны</div>
+                                    <div class="rating"><span class="star act"></span><span class="star act"></span><span class="star act"></span><span class="star"></span><span class="star"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="realty-popup-form">
+                          <div class="h3">Получить консультацию</div>
+                          <form id="realtyPopupForm">
+                            <input type="hidden" name="realty_popup_district" id="realty_popup_district">
+                            <div class="form-group">
+                              <label class="placeholder" for="realty_popup_phone">+7 (XXX) XXX-XX-XX</label>
+                              <input class="input-phone" type="text" name="realty_popup_phone" id="realty_popup_phone" required>
+                            </div>
+                            <div class="form-footer">
+                              <button class="btn btn-1" type="submit">Отправить заявку</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="realty-map" id="realtyMap"></div>
+          </div>
+          <!-- Карта END-->
+          <!-- Команда-->
+          <div class="section section-team">
+            <div class="section-content">
+              <div class="container">
+                <div class="section-header"><a name="team"></a>
+                  <div class="h2">Эксперты &laquo;Яуза&raquo; <span class="bubble">помогут вам сделать правильный выбор</span></div>
+                </div>
+                <div class="team-list">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="team-tmb">
+                        <div class="team-tmb-pic"><img src="files/team-1.jpg"></div>
+                        <div class="team-tmb-descr">
+                          <div class="h3">Маринин Владимир Владимирович</div>
+                          <div class="team-tmb-post">
+                            <p>Генеральный директор</p>
+                            <p>Рабочий стаж 20&nbsp;лет</p>
+                          </div>
+                          <div class="team-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#teamModal">Связаться</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="team-tmb">
+                        <div class="team-tmb-pic"><img src="files/team-2.jpg"></div>
+                        <div class="team-tmb-descr">
+                          <div class="h3">Косарев Сергей Викторович</div>
+                          <div class="team-tmb-post">
+                            <p>Риелтор-эксперт</p>
+                            <p>Рабочий стаж 25&nbsp;лет</p>
+                          </div>
+                          <div class="team-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#teamModal">Связаться</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="team-tmb">
+                        <div class="team-tmb-pic"><img src="files/team-3.jpg"></div>
+                        <div class="team-tmb-descr">
+                          <div class="h3">Балагурова Анна Борисовна</div>
+                          <div class="team-tmb-post">
+                            <p>Риелтор</p>
+                            <p>Рабочий стаж 15&nbsp;лет</p>
+                          </div>
+                          <div class="team-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#teamModal">Связаться</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="team-tmb">
+                        <div class="team-tmb-pic"><img src="files/team-4.jpg"></div>
+                        <div class="team-tmb-descr">
+                          <div class="h3">Попов Алексей Вячеславович</div>
+                          <div class="team-tmb-post">
+                            <p>Риелтор по&nbsp;новостройкам</p>
+                            <p>Рабочий стаж 10&nbsp;лет</p>
+                          </div>
+                          <div class="team-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#teamModal">Связаться</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="team-tmb">
+                        <div class="team-tmb-pic"><img src="files/team-5.jpg"></div>
+                        <div class="team-tmb-descr">
+                          <div class="h3">Косарев Юрий Сергеевич</div>
+                          <div class="team-tmb-post">
+                            <p>Эксперт вторичной недвижимости</p>
+                            <p>Рабочий стаж 5&nbsp;лет</p>
+                          </div>
+                          <div class="team-tmb-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#teamModal">Связаться</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Команда END-->
+          <!-- Отзывы-->
+          <div class="section section-reviews">
+            <div class="section-content">
+              <div class="container">
+                <div class="section-header"><a name="reviews"></a>
+                  <div class="h2">Отзывы клиентов</div>
+                </div>
+                <div class="reviews-slider-wrapper">
+                  <div class="reviews-slider">
+                    <div class="slide"><a class="review-tmb fancybox" href="https://www.youtube.com/embed/VsMcdEswK8k?autoplay=1" data-type="iframe">
+                        <div class="review-tmb-descr">
+                          <div class="h3">Александр Михайлович Константиновский</div>
+                          <p>Оформили в&nbsp;ипотеку 1-к квартиру</p>
+                        </div>
+                        <div class="review-tmb-video"><img src="files/video-review-1.jpg"></div></a></div>
+                    <div class="slide"><a class="review-tmb fancybox" href="https://www.youtube.com/embed/VsMcdEswK8k?autoplay=1" data-type="iframe">
+                        <div class="review-tmb-descr">
+                          <div class="h3">Иванова Юлия Евгеньевна</div>
+                          <p>Произведен обмен квартир</p>
+                        </div>
+                        <div class="review-tmb-video"><img src="files/video-review-2.jpg"></div></a></div>
+                    <div class="slide"><a class="review-tmb fancybox" href="https://www.youtube.com/embed/VsMcdEswK8k?autoplay=1" data-type="iframe">
+                        <div class="review-tmb-descr">
+                          <div class="h3">Поляков Кирилл Павлович</div>
+                          <p>Выгодно продали 3-к квартиру</p>
+                        </div>
+                        <div class="review-tmb-video"><img src="files/video-review-3.jpg"></div></a></div>
+                    <div class="slide"><a class="review-tmb fancybox" href="https://www.youtube.com/embed/VsMcdEswK8k?autoplay=1" data-type="iframe">
+                        <div class="review-tmb-descr">
+                          <div class="h3">Александр Михайлович Константиновский</div>
+                          <p>Оформили в&nbsp;ипотеку 1-к квартиру</p>
+                        </div>
+                        <div class="review-tmb-video"><img src="files/video-review-1.jpg"></div></a></div>
+                    <div class="slide"><a class="review-tmb fancybox" href="https://www.youtube.com/embed/VsMcdEswK8k?autoplay=1" data-type="iframe">
+                        <div class="review-tmb-descr">
+                          <div class="h3">Иванова Юлия Евгеньевна</div>
+                          <p>Произведен обмен квартир</p>
+                        </div>
+                        <div class="review-tmb-video"><img src="files/video-review-2.jpg"></div></a></div>
+                    <div class="slide"><a class="review-tmb fancybox" href="https://www.youtube.com/embed/VsMcdEswK8k?autoplay=1" data-type="iframe">
+                        <div class="review-tmb-descr">
+                          <div class="h3">Поляков Кирилл Павлович</div>
+                          <p>Выгодно продали 3-к квартиру</p>
+                        </div>
+                        <div class="review-tmb-video"><img src="files/video-review-3.jpg"></div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Отзывы END-->
+          <!-- Получить помощь-->
+          <div class="section section-order">
+            <div class="section-content">
+              <div class="container">
+                <div class="section-header">
+                  <div class="h2"><span>Вы&nbsp;тоже хотите</span> избавиться от&nbsp;проблем с&nbsp;покупкой или продажей недвижимости?</div>
+                </div>
+                <div class="section-order-descr">
+                  <p>Поможем сориентироваться среди множества предложений, подберем квартиру с&nbsp;учетом всех Ваших пожеланий и&nbsp;возможностей.</p>
+                  <p>В&nbsp;нашей базе данных большое количество готовых к&nbsp;продаже объектов в&nbsp;городе Мытищах</p>
+                </div>
+                <div class="order-form">
+                  <form id="orderForm">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="form-group">
+                          <label for="order_type">Выберите тип недвижимости:</label>
+                          <select name="order_type" id="order_type">
+                            <option value="1">Квартира</option>
+                            <option value="2">Дом</option>
+                            <option value="3">Коммерческая недвижимость</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="order_name">Имя:</label>
+                          <input type="text" name="order_name" id="order_name" required>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="form-group">
+                          <label for="order_budget">Бюджет:</label>
+                          <select name="order_budget" id="order_budget">
+                            <option value="1">3 - 6 млн. руб.</option>
+                            <option value="2">7 - 10 млн. руб.</option>
+                            <option value="3">более 10 млн. руб.</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="order_phone">Телефон:</label>
+                          <input class="input-phone" type="text" name="order_phone" id="order_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-12 col-lg-4">
+                        <label for="order_message">Требования</label>
+                        <textarea name="order_message" id="order_message" rows="4"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-md-6 col-lg-8">
+                        <div class="form-info">
+                          <p>Каждый оставивший заявку получит бонус в&nbsp;виде бесплатной консультации</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="form-footer">
+                          <button class="btn btn-1 btn-1-big" type="submit">Отправить заявку</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Залы END-->
+          <!-- Контакты-->
+          <div class="section section-contacts">
+            <div class="section-content">
+              <div class="container">
+                <div class="contacts-descr">
+                  <div class="contacts-descr-inner"><a name="contacts"></a>
+                    <div class="h2">Контакты</div>
+                    <div class="contacts-phones">
+                      <p><a href="tel:+7 498 601-67-26">+7 498 601-67-26</a></p>
+                      <p><a href="tel:+7 967 064-28-02">+7 967 064-28-02</a></p>
+                    </div>
+                    <div class="contacts-button"><a class="btn btn-1 btn-1-big" href="#" data-toggle="modal" data-target="#callbackModal">Перезвоните мне</a></div>
+                    <div class="contacts-address">
+                      <p>МО, г.Мытищи, ул.Летная, д.40</p>
+                    </div>
+                    <div class="contacts-email">
+                      <p><a href="mailto:agentstvo@mgk-group.ru">agentstvo@mgk-group.ru</a></p>
+                    </div>
+                    <div class="contacts-logo"><img src="images/contacts-logo.png"></div>
+                    <div class="contacts-copy">
+                      <p>&copy;&nbsp;2019. Агентство недвижимости &laquo;Яуза&raquo;.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts-map" id="contactsMap"></div>
+            </div>
+          </div>
+          <!-- Контакты END-->
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Заказать звонок</div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Укажите свое данные и&nbsp;наш специалист перезвонит вам в&nbsp;течение 10&nbsp;минут</p>
+              <div class="modal-form">
+                <form id="callbackForm">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="callback_name">Ваше имя</label>
+                        <input type="text" name="callback_name" id="callback_name" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="callback_phone">Номер телефона</label>
+                        <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-footer">
+                        <button class="btn btn-1" type="submit">Отправить заявку</button>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-agree">
+                        <p>Нажимая кнопку &laquo;Отправить&raquo; вы&nbsp;соглашаетесь с&nbsp;<a href="#">Политикой конфиденциальности</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="serviceModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Заказать пакет услуг</div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Вы&nbsp;выбрали пакет услуг &laquo;<span class="service-modal-name">Стандарт</span>&raquo;. Укажите свои данные и&nbsp;наш специалист перезвонит вам и&nbsp;проконсультирует.</p>
+              <div class="modal-form">
+                <form id="serviceForm">
+                  <input type="hidden" name="service_type" id="service_type">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="service_name">Ваше имя</label>
+                        <input type="text" name="service_name" id="service_name" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="service_phone">Номер телефона</label>
+                        <input class="input-phone" type="text" name="service_phone" id="service_phone" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-footer">
+                        <button class="btn btn-1" type="submit">Отправить заявку</button>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-agree">
+                        <p>Нажимая кнопку &laquo;Отправить&raquo; вы&nbsp;соглашаетесь с&nbsp;<a href="#">Политикой конфиденциальности</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="teamModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Связаться со&nbsp;специалистом</div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Укажите свое данные и&nbsp;наш специалист перезвонит вам в&nbsp;течение 10&nbsp;минут</p>
+              <div class="modal-form">
+                <form id="teamForm">
+                  <input type="hidden" name="team_person" id="team_person">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="team_name">Ваше имя</label>
+                        <input type="text" name="team_name" id="team_name" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="team_phone">Номер телефона</label>
+                        <input class="input-phone" type="text" name="team_phone" id="team_phone" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-footer">
+                        <button class="btn btn-1" type="submit">Отправить заявку</button>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-agree">
+                        <p>Нажимая кнопку &laquo;Отправить&raquo; вы&nbsp;соглашаетесь с&nbsp;<a href="#">Политикой конфиденциальности</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade success-modal" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Ваша заявка успешно принята!</div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Юрист свяжется с&nbsp;вами в&nbsp;течение 15&nbsp;минут.</p>
+              <div class="success-modal-button">
+                <button class="btn btn-1 btn-1-big" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/main.js"></script>
+      <script src="js/realty-map.js"></script>
+    </div>
+  </body>
+</html>
