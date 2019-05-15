@@ -24,7 +24,7 @@ ymaps.ready(function () {
 
   myMap.margin.addArea(mapMargin);
 
-  ymaps.geoXml.load('http://test.fglukhov.tmweb.ru/yauza/load/map-objects-6.kml').then(onGeoXmlLoad);
+  ymaps.geoXml.load('http://realty-yauza.ru/templates/themes/default/load/map-objects-12.kml').then(onGeoXmlLoad);
 
   myMap.behaviors.disable('scrollZoom');
 

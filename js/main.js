@@ -42,6 +42,38 @@ var baseUrl = ""
 
 $(document).ready(function () {
 
+  // Order form
+
+  $(".input-from").on("blur", function() {
+
+    if ($(this).val() > $(this).closest(".from-to-group").find(".input-to").val()) {
+
+      $(this).closest(".from-to-group").find(".input-to").val($(this).val());
+
+    }
+
+  });
+
+  $(".input-to").on("blur", function() {
+
+    if ($(this).val() < $(this).closest(".from-to-group").find(".input-from").val()) {
+
+      $(this).closest(".from-to-group").find(".input-from").val($(this).val());
+
+    }
+
+  });
+
+  orderForm();
+
+  $(".order-form select").on("change", function () {
+
+    orderForm();
+
+  });
+
+  // Order form END
+
   // Map popup
 
   $(".realty-popup-wrapper .close").click(function () {
@@ -55,24 +87,24 @@ $(document).ready(function () {
   // Team slider
 
   $(".team-slider").slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     speed: 500,
     infinite: false,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
           dots: true
         }
       }
@@ -106,8 +138,8 @@ $(document).ready(function () {
 
   ymaps.ready(function () {
 
-    var mapCenter = [55.723207, 37.600],
-        mapCenterMob = [55.723207, 37.603945];
+    var mapCenter = [55.903888, 37.708309],
+        mapCenterMob = [55.903888, 37.712309];
 
     if ($("#mobile-indicator").css("display") == "block") {
       var mCenter = mapCenterMob;
@@ -121,7 +153,7 @@ $(document).ready(function () {
         controls: ['zoomControl']
       }, {}),
 
-      myPlacemark = new ymaps.Placemark([55.723207, 37.603945], {
+      myPlacemark = new ymaps.Placemark([55.903888, 37.712309], {
         hintContent: '',
         balloonContent: ''
       }, {
@@ -129,7 +161,7 @@ $(document).ready(function () {
         // Необходимо указать данный тип макета.
         iconLayout: 'default#image',
         // Своё изображение иконки метки.
-        iconImageHref: 'images/map-pin.png',
+        iconImageHref: 'http://realty-yauza.ru/templates/themes/default/images/map-pin.png',
         // Размеры метки.
         iconImageSize: [44, 51],
         // Смещение левого верхнего угла иконки относительно
@@ -193,6 +225,7 @@ $(document).ready(function () {
   $("[data-target='#serviceModal']").click(function () {
 
     $("#service_type").val($(this).closest(".service-tmb").find(".h3").html().replace("<br>"," "));
+    $('#service-modal-name').text($(this).closest(".service-tmb").find(".h3").html().replace("<br>"," "));
 
   });
 
@@ -202,7 +235,7 @@ $(document).ready(function () {
 
   });
 
-  $("#callbackForm").submit(function() {
+  /*$("#callbackForm").submit(function() {
     if ($(this).valid()) {
       var form = $(this);
       $.ajax({
@@ -220,112 +253,112 @@ $(document).ready(function () {
       });
       return false;
     }
-  });
+  });*/
 
-  $("#topForm").submit(function() {
-    if ($(this).valid()) {
-      var form = $(this);
-      $.ajax({
-        type: "POST",
-        url: baseUrl + "order.php",
-        data: {
-          subject: "Яуза — заявка",
-          name: $("#top_name").val(),
-          phone: $("#top_phone").val()
-        }
-      }).done(function() {
+  // $("#topForm").submit(function() {
+  //   if ($(this).valid()) {
+  //     var form = $(this);
+  //     $.ajax({
+  //       type: "POST",
+  //       url: baseUrl + "order.php",
+  //       data: {
+  //         subject: "Яуза — заявка",
+  //         name: $("#top_name").val(),
+  //         phone: $("#top_phone").val()
+  //       }
+  //     }).done(function() {
 
-        formSuccess(form);
+  //       formSuccess(form);
 
-      });
-      return false;
-    }
-  });
+  //     });
+  //     return false;
+  //   }
+  // });
 
-  $("#serviceForm").submit(function() {
-    if ($(this).valid()) {
-      var form = $(this);
-      $.ajax({
-        type: "POST",
-        url: baseUrl + "order.php",
-        data: {
-          subject: "Яуза — заказ пакет услуг",
-          type: $("#service_type").val(),
-          name: $("#service_name").val(),
-          phone: $("#service_phone").val()
-        }
-      }).done(function() {
+  // $("#serviceForm").submit(function() {
+  //   if ($(this).valid()) {
+  //     var form = $(this);
+  //     $.ajax({
+  //       type: "POST",
+  //       url: baseUrl + "order.php",
+  //       data: {
+  //         subject: "Яуза — заказ пакет услуг",
+  //         type: $("#service_type").val(),
+  //         name: $("#service_name").val(),
+  //         phone: $("#service_phone").val()
+  //       }
+  //     }).done(function() {
 
-        formSuccess(form);
+  //       formSuccess(form);
 
-      });
-      return false;
-    }
-  });
+  //     });
+  //     return false;
+  //   }
+  // });
 
-  $("#teamForm").submit(function() {
-    if ($(this).valid()) {
-      var form = $(this);
-      $.ajax({
-        type: "POST",
-        url: baseUrl + "order.php",
-        data: {
-          subject: "Яуза — связь со специалистом",
-          person: $("#team_person").val(),
-          name: $("#team_name").val(),
-          phone: $("#team_phone").val()
-        }
-      }).done(function() {
+  // $("#teamForm").submit(function() {
+  //   if ($(this).valid()) {
+  //     var form = $(this);
+  //     $.ajax({
+  //       type: "POST",
+  //       url: baseUrl + "order.php",
+  //       data: {
+  //         subject: "Яуза — связь со специалистом",
+  //         person: $("#team_person").val(),
+  //         name: $("#team_name").val(),
+  //         phone: $("#team_phone").val()
+  //       }
+  //     }).done(function() {
 
-        formSuccess(form);
+  //       formSuccess(form);
 
-      });
-      return false;
-    }
-  });
+  //     });
+  //     return false;
+  //   }
+  // });
 
-  $("#realtyPopupForm").submit(function() {
-    if ($(this).valid()) {
-      var form = $(this);
-      $.ajax({
-        type: "POST",
-        url: baseUrl + "order.php",
-        data: {
-          subject: "Яуза — консультация по району",
-          district: $("#realty_popup_district").val(),
-          phone: $("#realty_popup_phone").val()
-        }
-      }).done(function() {
+  // $("#realtyPopupForm").submit(function() {
+  //   if ($(this).valid()) {
+  //     var form = $(this);
+  //     $.ajax({
+  //       type: "POST",
+  //       url: baseUrl + "order.php",
+  //       data: {
+  //         subject: "Яуза — консультация по району",
+  //         district: $("#realty_popup_district").val(),
+  //         phone: $("#realty_popup_phone").val()
+  //       }
+  //     }).done(function() {
 
-        formSuccess(form);
+  //       formSuccess(form);
 
-      });
-      return false;
-    }
-  });
+  //     });
+  //     return false;
+  //   }
+  // });
 
-  $("#orderForm").submit(function() {
-    if ($(this).valid()) {
-      var form = $(this);
-      $.ajax({
-        type: "POST",
-        url: baseUrl + "order.php",
-        data: {
-          subject: "Яуза — заявка",
-          realtytype: $("#order_type").val(),
-          realtybudget: $("#order_budget").val(),
-          name: $("#order_name").val(),
-          phone: $("#order_phone").val(),
-          realtymessage: $("#order_message").val()
-        }
-      }).done(function() {
+  // $("#orderForm").submit(function() {
+  //   if ($(this).valid()) {
+  //     var form = $(this);
+  //     $.ajax({
+  //       type: "POST",
+  //       url: baseUrl + "order.php",
+  //       data: {
+  //         subject: "Яуза — заявка",
+  //         realtytype: $("#order_type").val(),
+  //         realtybudget: $("#order_budget").val(),
+  //         name: $("#order_name").val(),
+  //         phone: $("#order_phone").val(),
+  //         realtymessage: $("#order_message").val()
+  //       }
+  //     }).done(function() {
 
-        formSuccess(form);
+  //       formSuccess(form);
 
-      });
-      return false;
-    }
-  });
+  //     });
+  //     return false;
+  //   }
+  // });
 
 
   var scrollPos = $(window).scrollTop();
@@ -519,6 +552,43 @@ $(document).ready(function () {
 
   validateForms();
 
+  simpleForm('form#callbackForm', function(){
+    $("input.input-phone").mask("+7 (999) 999-99-99");
+  });
+  simpleForm('form#topForm', function(){
+    $("input.input-phone").mask("+7 (999) 999-99-99");
+  });
+  simpleForm('form#serviceForm', function(){
+    $("input.input-phone").mask("+7 (999) 999-99-99");
+  });
+  simpleForm('form#teamForm', function(){
+    $("input.input-phone").mask("+7 (999) 999-99-99");
+  });
+  simpleForm('form#realtyPopupForm', function(){
+    $("input.input-phone").mask("+7 (999) 999-99-99");
+  });
+  simpleForm('form#orderForm', function(){
+    $("input.input-phone").mask("+7 (999) 999-99-99");
+
+    $("select").not(".picker__select--month, .picker__select--year").each(function () {
+    if ($(this).attr("multiple")) {
+      $(this).selectpicker({
+        selectAllText: "Выбрать всё",
+        deselectAllText: "Снять выбор",
+        selectedTextFormat: "count",
+        countSelectedText: function(count) {
+          return count + " " + declOfNum(count, ['элемент', 'элемента', 'элементов']);
+        }
+      });
+    } else {
+      $(this).selectpicker({
+        selectAllText: "Выбрать всё",
+        deselectAllText: "Снять выбор"
+      });
+    }
+  });
+  });
+
 });
 
 function validateForms() {
@@ -678,6 +748,106 @@ function slickResponsive() {
 
     if ($(".team-list .row").hasClass("slick-initialized")) {
       $(".team-list .row").slick("unslick");
+    }
+
+  }
+
+}
+
+/*
+version 2015-09-23 14:30 GMT +2
+*/
+function simpleForm(form, callback) {
+  $(document).on('submit', form, function(e){
+    e.preventDefault();
+    var formData = {};
+    var hasFile = false;
+    if ($(this).find('[type=file]').length < 1) {
+      formData = $(this).serialize();
+    }
+    else {
+      formData = new FormData();
+      $(this).find('[name]').each(function(){
+
+        switch($(this).prop('type')) {
+
+          case 'file':
+            if ($(this)[0]['files'].length > 0) {
+              formData.append($(this).prop('name'), $(this)[0]['files'][0]);
+              hasFile = true;
+            }
+            break;
+
+          case 'radio':
+          case 'checkbox':
+            if (!$(this).prop('checked')) {
+              break;
+            }
+            formData.append($(this).prop('name'), $(this).val().toString());
+            break;
+
+          default:
+            formData.append($(this).prop('name'), $(this).val().toString());
+            break;
+        }
+      });
+    }
+
+    $.ajax({
+      url: $(this).prop('action'),
+      data: formData,
+      type: 'POST',
+      contentType : hasFile ? 'multipart/form-data' : 'application/x-www-form-urlencoded',
+      cache       : false,
+      processData : false,
+      success: function(response) {
+        $(form).removeClass('ajax-waiting');
+        $(form).find("[type=submit]").prop("disabled", false);
+        $(form).html($(response).find(form).html());
+
+        if (typeof callback === 'function') {
+          callback(response);
+        }
+      }
+    });
+
+    $(form).addClass('ajax-waiting');
+    $(form).find("[type=submit]").prop("disabled", true);
+
+    return false;
+  });
+}
+
+function orderForm() {
+
+  if ($("#order_category_1").length) {
+
+    if ($("#order_type").val() == 1) {
+
+      if ($("#order_object").val() == 1) {
+
+        $("#order_category_1").prop("disabled", false).selectpicker("refresh");
+        $("#order_category_2").prop("disabled", true).selectpicker("refresh");
+        $("#order_category_3").prop("disabled", true).selectpicker("refresh");
+
+      } else if ($("#order_object").val() == 2) {
+
+        $("#order_category_1").prop("disabled", true).selectpicker("refresh");
+        $("#order_category_2").prop("disabled", false).selectpicker("refresh");
+        $("#order_category_3").prop("disabled", true).selectpicker("refresh");
+
+      } else if ($("#order_object").val() == 3) {
+
+        $("#order_category_1").prop("disabled", true).selectpicker("refresh");
+        $("#order_category_2").prop("disabled", true).selectpicker("refresh");
+        $("#order_category_3").prop("disabled", false).selectpicker("refresh");
+
+      }
+
+    } else if ($("#order_type").val() == 2) {
+
+      $("#order_category_1, #order_category_2, #order_category_3").prop("disabled", true).selectpicker("refresh");
+
     }
 
   }

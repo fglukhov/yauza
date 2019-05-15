@@ -1319,9 +1319,9 @@
                 <div class="section-header"><a name="team"></a>
                   <div class="h2">Эксперты &laquo;Яуза&raquo; <span class="bubble">помогут вам сделать правильный выбор</span></div>
                 </div>
-                <div class="team-list">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="team-slider-wrapper">
+                  <div class="team-slider">
+                    <div class="slide">
                       <div class="team-tmb">
                         <div class="team-tmb-pic"><img src="files/team-1.jpg"></div>
                         <div class="team-tmb-descr">
@@ -1459,11 +1459,29 @@
                     <div class="row">
                       <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="form-group">
-                          <label for="order_type">Выберите тип недвижимости:</label>
+                          <label for="order_type">Тип сделки:</label>
                           <select name="order_type" id="order_type">
-                            <option value="1">Квартира</option>
-                            <option value="2">Дом</option>
-                            <option value="3">Коммерческая недвижимость</option>
+                            <option value="1">Покупка</option>
+                            <option value="2">Продажа</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="order_category_1">Категория:</label>
+                          <select name="order_category_1" id="order_category_1">
+                            <option value="1">Новостройка</option>
+                            <option value="2">Вторичка</option>
+                          </select>
+                          <select name="order_category_2" id="order_category_2" disabled>
+                            <option value="1">От застройщика</option>
+                            <option value="2">От собственника</option>
+                          </select>
+                          <select name="order_category_3" id="order_category_3" disabled>
+                            <option value="1">Офис</option>
+                            <option value="2">Склад</option>
+                            <option value="3">Торговая площадь</option>
+                            <option value="4">Производство</option>
+                            <option value="5">Здание</option>
+                            <option value="6">ПСН</option>
                           </select>
                         </div>
                         <div class="form-group">
@@ -1473,12 +1491,25 @@
                       </div>
                       <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="form-group">
-                          <label for="order_budget">Бюджет:</label>
-                          <select name="order_budget" id="order_budget">
-                            <option value="1">3 - 6 млн. руб.</option>
-                            <option value="2">7 - 10 млн. руб.</option>
-                            <option value="3">более 10 млн. руб.</option>
+                          <label for="order_object">Объект недвижимости:</label>
+                          <select name="order_object" id="order_object">
+                            <option value="1">Квартира</option>
+                            <option value="2">Дом</option>
+                            <option value="3">Коммерческая недвижимость</option>
                           </select>
+                        </div>
+                        <div class="form-group">
+                          <label>Стоимость:</label>
+                          <div class="from-to-group">
+                            <div class="form-group">
+                              <label class="placeholder" for="order_from">От:</label>
+                              <input class="numeric input-from" type="text" name="order_from" id="order_from">
+                            </div>
+                            <div class="form-group">
+                              <label class="placeholder" for="order_to">До:</label>
+                              <input class="numeric input-to" type="text" name="order_to" id="order_to">
+                            </div>
+                          </div>
                         </div>
                         <div class="form-group">
                           <label for="order_phone">Телефон:</label>
@@ -1486,17 +1517,10 @@
                         </div>
                       </div>
                       <div class="col-xs-12 col-md-12 col-lg-4">
-                        <label for="order_message">Требования</label>
-                        <textarea name="order_message" id="order_message" rows="4"></textarea>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12 col-md-6 col-lg-8">
-                        <div class="form-info">
-                          <p>Каждый оставивший заявку получит бонус в&nbsp;виде бесплатной консультации</p>
+                        <div class="form-group">
+                          <label for="order_message">Требования</label>
+                          <textarea name="order_message" id="order_message" rows="4"></textarea>
                         </div>
-                      </div>
-                      <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="form-footer">
                           <button class="btn btn-1 btn-1-big" type="submit">Отправить заявку</button>
                         </div>
