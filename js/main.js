@@ -824,6 +824,8 @@ function orderForm() {
 
     if ($("#order_type").val() == 1) {
 
+      $("#order_category_1").closest(".form-group").show();
+
       if ($("#order_object").val() == 1) {
 
         $("#order_category_1").prop("disabled", false).selectpicker("refresh");
@@ -845,6 +847,8 @@ function orderForm() {
       }
 
     } else if ($("#order_type").val() == 2) {
+
+      $("#order_category_1").closest(".form-group").hide();
 
       $("#order_category_1, #order_category_2, #order_category_3").prop("disabled", true).selectpicker("refresh");
 
